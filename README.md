@@ -1,16 +1,9 @@
-# maps_app
+# Map App
 
-A new Flutter project.
+App using geolocation, google maps api, mapbox api
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1616644630](https://user-images.githubusercontent.com/37616820/112417003-1f057d00-8cfd-11eb-8eda-da31159b530a.png)
+![Screenshot_1616644651](https://user-images.githubusercontent.com/37616820/112417004-1f057d00-8cfd-11eb-9174-db1676460399.png)
+![Screenshot_1616644667](https://user-images.githubusercontent.com/37616820/112417006-20cf4080-8cfd-11eb-922f-14d02a82bcb6.png)
+![Screenshot_1616644696](https://user-images.githubusercontent.com/37616820/112417007-2167d700-8cfd-11eb-8e00-453bd9d6f34c.png)
+![Screenshot_1616644728](https://user-images.githubusercontent.com/37616820/112417010-22990400-8cfd-11eb-8709-8514715c92c7.png)
