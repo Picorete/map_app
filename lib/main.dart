@@ -9,6 +9,7 @@ import 'package:maps_app/ui/pages/loading_page.dart';
 import 'package:maps_app/ui/pages/map_page.dart';
 
 import 'package:maps_app/di/bloc_register.dart';
+import 'package:maps_app/ui/widgets/marker/marker.dart';
 import 'di/repositories_register.dart';
 
 void main() {

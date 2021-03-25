@@ -18,7 +18,7 @@ class MapState {
       this.followUbication = false,
       this.centralPoint,
       this.isLoading = false,
-      Map<String, Polyline> markers,
+      Map<String, Marker> markers,
       Map<String, Polyline> polylines})
       : this.polylines = polylines ?? new Map(),
         this.markers = markers ?? new Map();
@@ -30,11 +30,13 @@ class MapState {
     LatLng centralPoint,
     bool isLoading,
     Map<String, Polyline> polylines,
+    Map<String, Marker> markers,
   }) =>
       MapState(
         mapReady: mapReady ?? this.mapReady,
         drawPath: drawPath ?? this.drawPath,
         polylines: polylines ?? this.polylines,
+        markers: markers ?? this.markers,
         centralPoint: centralPoint ?? this.centralPoint,
         followUbication: followUbication ?? this.followUbication,
         isLoading: isLoading ?? this.isLoading,

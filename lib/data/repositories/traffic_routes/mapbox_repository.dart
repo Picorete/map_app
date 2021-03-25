@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart' show LatLng;
 import 'package:maps_app/data/models/places_response.dart';
+import 'package:maps_app/data/models/reverse_query_response.dart';
 import 'package:maps_app/data/models/route_response.dart';
 import 'package:maps_app/domain/repositories/abstract_routes.dart';
 import 'package:maps_app/helpers/debouncer.dart';
@@ -57,6 +58,20 @@ class MapBoxRepository extends AbstractRouteRepository {
     });
 
     Future.delayed(Duration(milliseconds: 201)).then((_) => timer.cancel());
+  }
+
+  @override
+  Future<ReverseQueryResponse> getInfoOfPlace(LatLng coords) async {
+    final url =
+        '${this._urlPlaces}/mapbox.places/${coords.longitude},${coords.latitude}.json';
+
+    final resp = await this
+        ._dio
+        .get(url, queryParameters: {'access_token': _apiKey, 'language': 'es'});
+
+    final data = reverseQueryResponseFromJson(resp.data);
+
+    return data;
   }
 
   Future<PlacesResponse> getPlacesByQuery(
